@@ -1,14 +1,16 @@
 {
-  "name": "smartphones",
+  "name": "cars",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": " CI='' node server.js"
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "nodemon": "^2.0.7"
   },
   "engines": {
