@@ -1,0 +1,45 @@
+* {
+  font-family: cursive;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(38, 91, 190, 0.733);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 380px;
+  height: 500px;
+  border-radius: 5%;
+}
+
+input {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: black;
+}
+
+label {
+  padding: 15px;
+}
+
+#errortext {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  min-height: 1.5em;
+  margin: 0.2em auto 0.5em;
+  font-size: 14px;
+  color: red;
+  text-transform: uppercase;
+}
