@@ -1,0 +1,58 @@
+[
+    {
+        "companyName": "mercedes",
+        "employeName" : "alex",
+        "jobTitle" : "CEO",
+        "phone" : "052-1499672",
+        "email" : "alex@gmail.com"
+    },
+    {
+        "companyName": "Audi",
+        "employeName" : "martin",
+        "jobTitle" : "CEO",
+        "phone" : "052-1278972",
+        "email" : "martin445@gmail.com"
+    },
+    {
+        "companyName": "BMW",
+        "employeName" : "ala",
+        "jobTitle" : "CEO",
+        "phone" : "052-1490014",
+        "email" : "aladdin4@gmail.com"
+    },
+    {
+        "companyName": "Alfa romeo",
+        "employeName" : "diab",
+        "jobTitle" : "archetict",
+        "phone" : "058-4759672",
+        "email" : "diab89@gmail.com"
+    },
+    {
+        "companyName": "Ferrari",
+        "employeName" : "mario",
+        "jobTitle" : "CEO",
+        "phone" : "053-4876620",
+        "email" : "mario1998@gmail.com"
+    },
+    {
+        "companyName": "Porsche",
+        "employeName" : "mahmed",
+        "jobTitle" : "CEO",
+        "phone" : "050-0121489",
+        "email" : "mahmed1994@gmail.com"
+    },
+    {
+        "companyName": "Lexus",
+        "employeName" : "sawaed",
+        "jobTitle" : "project manager",
+        "phone" : "055-1149824",
+        "email" : "sawaedTheBoss@gmail.com"
+    },
+    {
+        "companyName": "Lamborghini",
+        "employeName" : "dana",
+        "jobTitle" : "CEO",
+        "phone" : "052-1188732",
+        "email" : "dana159@gmail.com"
+    }
+]
