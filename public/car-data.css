@@ -1,0 +1,100 @@
+body {
+  background-image: url("https://static.carthrottle.com/workspace/uploads/posts/2015/04/car-company-logos-10-55401975116a0.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#body {
+  margin: auto;
+  margin-top: 130px;
+  width: 65%;
+  height: 640px;
+  border: 5px solid black;
+  padding: 10px;
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px;
+  border-top: 3px solid rgb(47, 78, 90);
+  box-shadow: 15px 50px 80px rgb(29 27 27 / 55%);
+  background-color: rgba(255 255 255 / 90%);
+}
+
+#title {
+  padding-top: 30px;
+  font-size: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#genres {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#icon img {
+  width: 100px;
+}
+
+#flag img {
+  width: 100px;
+}
+
+div {
+  cursor: pointer;
+  transition: width 3s;
+}
+
+div > span:hover {
+  width: 60px;
+  height: 50px;
+}
+
+#infoButton:hover {
+  cursor: pointer;
+  border: 2px solid black;
+  font-size: larger;
+}
+
+#backButton:hover{
+  cursor: pointer;
+  border: 2px solid black;
+  font-size: larger;
+}
+
+p{
+  font-size: 15px;
+  color: rgba(199, 19, 19, 0.555);
+}
+
+i {
+  position: relative;
+  animation: slideright 2s infinite;
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+  }
+}
+
+
+#ulInfo{
+ font-size: xx-large;
+}
