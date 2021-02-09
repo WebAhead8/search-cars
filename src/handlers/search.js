@@ -7,7 +7,7 @@ function searchHandler(request, response)
     const params = new URLSearchParams(request.url.split("?")[1]);
     const carName = params.get("name");
 
-    const filePath = path.join(__dirname , ".." , "data.json");
+    const filePath = path.join(__dirname , ".." , "./db/data.json");
 
     fs.readFile(filePath ,{encoding: "utf-8"}, (err , file)=>{
         if(err)
