@@ -7,7 +7,7 @@ function searchEmployeHandler(request, response)
     const params = new URLSearchParams(request.url.split("?")[1]);
     const carName = params.get("name");
 
-    const filePath = path.join(__dirname , ".." , "employeData.json");
+    const filePath = path.join(__dirname , ".." , "./db/employeData.json");
 
     fs.readFile(filePath ,{encoding: "utf-8"}, (err , file)=>{
         if(err)
