@@ -8,7 +8,6 @@ dataInput.addEventListener("keyup", (event) => {
       return response.json();
     })
     .then((data) => {
-      console.log(dataInput.value);
       document.getElementById("data-list").innerHTML = "";
 
       for (let index of data) {
@@ -22,6 +21,9 @@ dataInput.addEventListener("keyup", (event) => {
 
 form.addEventListener("submit", (event) => {
   let datalaistvalue = document.getElementById("data-list").textContent;
+  console.log("data list",datalaistvalue)
+  console.log("data input"+dataInput.value)
+
 
   if (dataInput.value !== datalaistvalue) 
   {
