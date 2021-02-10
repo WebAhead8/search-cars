@@ -4,9 +4,9 @@ dotenv.config()
 
 let connectionString
 if (process.env.NODE_ENV == 'production') {
-  connectionString = process.env.PRODUCTION_DATABASE_URL
-} else {
   connectionString = process.env.DATABASE_URL
+} else {
+  connectionString = process.env.DEV_DATABASE_URL
 }
 
 const db = new pg.Pool({ connectionString })
