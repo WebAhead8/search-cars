@@ -5,6 +5,7 @@ const searchHandler = require("./handlers/search");
 const secondHandler = require("./handlers/secondHandler");
 const thirdHandler = require("./handlers/thirdHandler");
 const countyHandler = require("./handlers/country");
+const getCountryDatahandler = require("./handlers/getCountryDatahandler");
 const searchEmployeHandler = require("./handlers/searchEmploye");
 
 function router(req, res) {
@@ -17,6 +18,7 @@ function router(req, res) {
   else if (url.includes("result")) secondHandler(req, res);
   else if (url.includes("info")) thirdHandler(req, res);
   else if (url.includes("country")) countyHandler(req, res);
+  else if (url.includes("flag")) getCountryDatahandler(req, res);
   else missingHandler(req, res);
 }
 module.exports = router;

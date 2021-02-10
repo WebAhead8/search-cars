@@ -141,3 +141,7 @@ button {
   box-sizing: border-box;
   border-radius: 5%;
 }
+
+output img {
+  width: 140px;
+}
