@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'production') {
 
 const db = new pg.Pool({
   connectionString,
-  ssl: process.env.NODE_ENV === 'production'
+  ssl: { rejectUnauthorized: false }
 })
 db.query('SELECT * FROM employes').then(result => console.log('result'))
 
