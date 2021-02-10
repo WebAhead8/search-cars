@@ -3,13 +3,16 @@ const dotenv = require('dotenv')
 dotenv.config()
 
 let connectionString
-if (process.env.NODE_ENV == 'production') {
+if (process.env.NODE_ENV === 'production') {
   connectionString = process.env.DATABASE_URL
 } else {
   connectionString = process.env.DEV_DATABASE_URL
 }
 
-const db = new pg.Pool({ connectionString })
+const db = new pg.Pool({
+  connectionString,
+  ssl: process.env.NODE_ENV === 'production'
+})
 db.query('SELECT * FROM employes').then(result => console.log('result'))
 
 module.exports = db
