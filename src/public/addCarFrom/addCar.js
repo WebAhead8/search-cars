@@ -4,5 +4,3 @@ const carModele = document.getElementById("model");
 const carCountry = document.getElementById("country");
 const carIcon = document.getElementById("icon");
 const form = document.getElementById("addCFrom");
-
-form.addEventListener("submit", () => {});

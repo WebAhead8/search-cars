@@ -4,22 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/public/addCarFrom/addCar.css" />
+    <link rel="stylesheet" href="/public/addCarFrom/addCar.css" />
     <title>Add New Car</title>
   </head>
   <body>
-    <form id="addCForm">
-      <h1>add car info</h1>
-      <label for="name">Name: <input name="name" id="name" /> </label>
-      <label for="model">Model: <input name="model" id="model" /> </label>
-      <label for="country"
-        >Industry:
-        <input name="country" id="country" />
-      </label>
-      <label for="icon">icon URL: <input name="icon" id="icon" /> </label>
-      <output id="errortext"></output>
-      <button type="submit">Add</button>
-    </form>
-    <script src="/src/public/addCarFrom/addCar.js"></script>
+    <header>
+      <div class="container">
+        <img src="/public/favico.png" alt="logo" class="logo" />
+        <nav>
+          <ul>
+            <li><a href="/public/firstPage.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+              <a href="/public/addCarFrom/addCar.html">Add New Car</a>
+            </li>
+            <li>
+              <a href="/public/addEmploye/employeForm.html">Add New Employe</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="body">
+      <form id="addCForm">
+        <h1>add car info</h1>
+        <label for="name">Name: <input name="name" id="name" /> </label>
+        <label for="model">Model: <input name="model" id="model" /> </label>
+        <label for="country"
+          >Industry:
+          <input name="country" id="country" />
+        </label>
+        <label for="icon">icon URL: <input name="icon" id="icon" /> </label>
+        <output id="errortext"></output>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+    <script src="/public/addCarFrom/addCar.js"></script>
   </body>
 </html>
