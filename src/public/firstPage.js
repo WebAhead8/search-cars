@@ -19,18 +19,11 @@ dataInput.addEventListener("keyup", (event) => {
 });
 
 form.addEventListener("submit", (event) => {
-<<<<<<< HEAD
   let datalaistvalue = document
     .getElementById("data-list")
     .textContent.toLowerCase();
 
   console.log(dataInput.value, "datainput", datalaistvalue, "datalist");
-=======
-  let datalaistvalue = document.getElementById("data-list").textContent;
-  console.log("data list",datalaistvalue)
-  console.log("data input"+dataInput.value)
-
->>>>>>> 4fce395985febc82d17a52d8e48c021187bace88
 
   if (dataInput.value.toLowerCase() !== datalaistvalue) {
     event.preventDefault();

@@ -12,7 +12,6 @@ fetch(`/search/?name=${input.toLowerCase()}`)
   });
 
 function fillinformation(data) {
-<<<<<<< HEAD
   document
     .getElementById("flagImg")
     .setAttribute("src", data[0]["country_flag"]);
@@ -21,14 +20,6 @@ function fillinformation(data) {
   document.getElementById("companyName").textContent = data[0]["carname"];
 
   document.getElementById("carLogo").setAttribute("src", data[0]["iconurl"]);
-=======
-  document.getElementById("flagImg").setAttribute("src", data[0]["country_flag"]);
-  document.getElementById("flagImg").textContent = data[0]["industry"];
-
-  document.getElementById("companyName").textContent = data[0]["carName"];
-
-  document.getElementById("carLogo").setAttribute("src", data[0]["iconUrl"]);
->>>>>>> 4fce395985febc82d17a52d8e48c021187bace88
 
   for (const index of data[0]["geners"]) {
     let par = document.createElement("span");
