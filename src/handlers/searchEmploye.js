@@ -4,12 +4,11 @@ const db = require("../db/connection");
 
 
 // function searchEmployeHandler(request, response)
-// {
+//{
 //     const params = new URLSearchParams(request.url.split("?")[1]);
 //     const carName = params.get("name");
 
 //     const initPath = path.join(__dirname , ".." , "./db/init.sql");
-
 //     fs.readFile(initPath ,{encoding: "utf-8"}, (err , file)=>{
 //         if(err)
 //         {
@@ -39,8 +38,9 @@ function searchEmployeHandler(request, response) {
 
     db.query(`SELECT * FROM employes WHERE carName = $1`, [car])
         .then(result => {
-            response.writeHead(200, { "content-type": "application/x-sql" });
-            response.end(result.rows)
+            response.writeHead(200 , {encoding:"utf-8"} ,{ "content-type": "application/json" });
+            console.log(result.rows);
+            response.end(JSON.stringify(result.rows))
         })
         .catch(error=>{
             console.log('error',error.message);

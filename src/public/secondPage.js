@@ -14,12 +14,12 @@ fetch(`/search/?name=${input}`)
   });
 
 function fillinformation(data) {
-  document.getElementById("flagImg").setAttribute("src", data[0]["country-flag"]);
+  document.getElementById("flagImg").setAttribute("src", data[0]["country_flag"]);
   document.getElementById("flagImg").textContent = data[0]["industry"];
 
-  document.getElementById("companyName").textContent = data[0]["name"];
+  document.getElementById("companyName").textContent = data[0]["carName"];
 
-  document.getElementById("carLogo").setAttribute("src", data[0]["icon-url"]);
+  document.getElementById("carLogo").setAttribute("src", data[0]["iconUrl"]);
 
   for (const index of data[0]["genres"]) {
     let par = document.createElement("span");

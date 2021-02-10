@@ -8,6 +8,7 @@ dataInput.addEventListener("keyup", (event) => {
       return response.json();
     })
     .then((data) => {
+      console.log(dataInput.value);
       document.getElementById("data-list").innerHTML = "";
 
       for (let index of data) {

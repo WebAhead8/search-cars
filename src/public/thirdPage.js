@@ -1,6 +1,5 @@
 const input = window.location.search.split("=")[1];
 
-console.log("ala" + input);
 
 fetch(`./search/?name=${input}`)
     .then((response) => {
@@ -15,18 +14,18 @@ fetch(`./search/?name=${input}`)
     .catch(err=>console.log('An Error Here:',err));
 
 
-// fetch(`./btata/?name=${input}`)
-//     .then((response) => {
-//         if (!response.ok) throw new Error(response.status);
-//         console.log("diab");
-//         return response.json();
-//     })
-//     .then((dataEmploye) => {
-//         console.log("the type of data is : " + typeof dataEmploye)
-//         console.log("the data is : " + dataEmploye)
-//         fillData1(dataEmploye);
-//         console.log(dataEmploye+"bl5mes");
-//     });
+fetch(`./btata/?name=${input}`)
+    .then((response) => {
+        if (!response.ok) throw new Error(response.status);
+        console.log("diab");
+        return response.json();
+    })
+    .then((dataEmploye) => {
+        console.log("the type of data is : " + typeof dataEmploye)
+        console.log("the data is : " + dataEmploye)
+        fillData1(dataEmploye);
+        console.log(dataEmploye+"bl5mes");
+    });
 
 function fillData(data) {
     document.getElementById("flagImg").setAttribute("src", data[0]["country-flag"]);
@@ -40,12 +39,12 @@ function fillData(data) {
 function fillData1(dataEmploye){
 
     let li1=document.createElement("li");
-    li1.textContent="employe name : "+dataEmploye[0]["employeName"];
+    li1.textContent="employe name : "+dataEmploye[0]["employename"];
     document.getElementById("ulInfo").appendChild(li1);
 
 
     let li2=document.createElement("li");
-    li2.textContent="job title : "+dataEmploye[0]["jobTitle"];
+    li2.textContent="job title : "+dataEmploye[0]["jobtitle"];
     document.getElementById("ulInfo").appendChild(li2);
 
 
