@@ -11,9 +11,7 @@ fetch(`/search/?name=${input.toLowerCase()}`)
   })
 
 function fillinformation (data) {
-  document
-    .getElementById('flagImg')
-    .setAttribute('src', data[0]['country_flag'])
+  document.getElementById('flagImg').setAttribute('src', data[0]['country_flag'])
   document.getElementById('flagImg').textContent = data[0]['industry']
 
   document.getElementById('companyName').textContent = data[0]['carname']

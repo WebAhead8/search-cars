@@ -1,6 +1,7 @@
 const dataInput = document.getElementById("car-input");
 const form = document.getElementById("form");
 
+
 dataInput.addEventListener("keyup", (event) => {
   fetch(`/search/?name=${dataInput.value.toLowerCase()}`)
     .then((response) => {

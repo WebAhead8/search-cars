@@ -9,10 +9,6 @@ if (process.env.NODE_ENV === 'production') {
   connectionString = process.env.DEV_DATABASE_URL
 }
 
-const db = new pg.Pool({
-  connectionString,
-  ssl: { rejectUnauthorized: false }
-})
-db.query('SELECT * FROM employes').then(result => console.log('result'))
+const db = new pg.Pool({connectionString,ssl: { rejectUnauthorized: false }})
 
 module.exports = db
